@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术文章 - TechMaster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="text-decoration: none; color: inherit;">TechMaster</a></h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="articles.html" class="nav-link active">技术文章</a>
+                <a href="premium.html" class="nav-link">付费资源</a>
+                <a href="login.html" class="nav-link">登录/注册</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="featured-articles" style="padding-top: 120px;">
+        <div class="container">
+            <h1 class="section-title">技术文章</h1>
+            
+            <!-- 文章筛选 -->
+            <div class="article-filters">
+                <button class="filter-btn active">全部</button>
+                <button class="filter-btn">免费</button>
+                <button class="filter-btn">付费</button>
+                <button class="filter-btn">前端</button>
+                <button class="filter-btn">后端</button>
+                <button class="filter-btn">AI/ML</button>
+            </div>
+
+            <div class="articles-grid">
+                <!-- 示例文章1 -->
+                <article class="article-card">
+                    <div class="article-badge">免费</div>
+                    <img src="https://via.placeholder.com/300x200/3B82F6/FFFFFF?text=React+优化" alt="React优化">
+                    <div class="article-content">
+                        <h3>React 性能优化实战指南</h3>
+                        <p>深入探讨React应用性能瓶颈，提供实用的优化技巧和最佳实践。</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-clock"></i> 阅读时间: 18分钟</span>
+                            <span><i class="far fa-calendar"></i> 2024-01-20</span>
+                        </div>
+                        <a href="#" class="read-more">阅读全文 →</a>
+                    </div>
+                </article>
+
+                <!-- 示例文章2 -->
+                <article class="article-card">
+                    <div class="article-badge premium">付费</div>
+                    <img src="https://via.placeholder.com/300x200/8B5CF6/FFFFFF?text=微服务" alt="微服务架构">
+                    <div class="article-content">
+                        <h3>Spring Cloud 微服务架构深度解析</h3>
+                        <p>完整的微服务解决方案，包含服务发现、配置中心、熔断器等核心组件。</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-clock"></i> 阅读时间: 30分钟</span>
+                            <span><i class="fas fa-download"></i> 包含源码</span>
+                        </div>
+                        <div class="price-tag">¥39.9</div>
+                        <a href="#" class="read-more">购买阅读 →</a>
+                    </div>
+                </article>
+
+                <!-- 更多文章... -->
+            </div>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
